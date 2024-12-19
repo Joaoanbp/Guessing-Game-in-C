@@ -15,7 +15,7 @@ int main(){
     int guess, nivel, totaltentativas, correct;
     double pontos = 1000;
 
-    printf("What level of difficult you want?\n");
+    printf("What level of difficulty you want?\n");
     printf("-> (1) Easy - (2) Medium - (3) Hard\n\n");
     scanf("%d", &nivel);
 
@@ -44,8 +44,8 @@ switch(nivel){
 
 
         if(correct){
-            printf("Congratulations! You guess it right!\n\n");
-            printf("You win and made %2.f points!\n", pontos);
+            printf("Congratulations! You guessed it right!\n\n");
+            printf("You win and made %.2f points!\n", pontos);
             break;         
         }else if(guess > numerosecreto){
             printf("\nYour guess was higher than the secret one. Try again!\n");
